@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+
+#aboutus{display:block; width:100%; line-height:1.6em;
+    height: 734px;
+    left:100px;
+    top: 20px;
+    margin-left: 161px;
+}
+#aboutus .fl_left{display:block; width:500px;}
+#aboutus #hpage_slider{display:block; width:498px; height:338px; color:#999999; background-color:#FAFAFA; border:1px solid #D8D9DE; border-bottom-color:#FAFAFA; overflow:hidden;}
+#aboutus #hpage_slider div.item{position:relative; display:block; width:480px; height:297px; 
+margin:9px;
+    top: -38px;
+    left: 46px;
+}
+
+
+
+#aboutus #fsn{display:block; position:relative; width:498px; height:18px; margin:0 0 25px 0; text-align:center; z-index:1000; color:#999999; background-color:#FAFAFA; border:1px solid #D8D9DE; border-top-color:#FAFAFA;}
+
+
+
