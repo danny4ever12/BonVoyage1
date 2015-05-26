@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+.gallery{display:block; width:100%; margin-bottom:30px;}
+.gallery ul{margin:0; padding:0; list-style:none;
+    height: 1029px;
+    width: 958px;
+}
+.gallery li{float:left; margin:0 0 10px 10px; }
+.gallery li a img{width:174px; height:150px; padding:4px; border:1px solid #D8D9DE;}
+.gallery li a:hover img{border-color:#B86365;}
+.gallery li.first{margin-left:0;
+    width: 595px;
+    height: 485px;
+}
