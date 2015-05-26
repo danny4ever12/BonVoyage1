@@ -1,0 +1,156 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+ <!--tourist requirements-->
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="layout/scripts/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="layout/scripts/sidebarjs.js"></script>
+   <link rel="stylesheet" href="layout/styles/sidebarcss.css" />
+   <!-- end requirements-->
+   
+<script type="text/javascript" src="layout/scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+       
+        $('a.topOfPage').click(function () {
+            $.scrollTo(0, 1200);
+            return false;
+        });
+       
+    });
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="layout/scripts/jquery.cycle.min.js"></script>
+
+<!-- important anime-->
+<script type="text/javascript">
+    $(function () {
+        $('#hpage_slider').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+            timeout: 5000,
+            fx: 'fade',
+            pager: '#fs_pagination',
+            pause: 1,
+            pauseOnPagerHover: 0
+        });
+    });
+</script>
+
+
+
+</head>
+<body>
+
+ 
+<div class="wrapper col2">
+  <div id="header" class="clear">
+  
+    <div id="topnav" 
+          style="font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: italic; color: #FFFFFF">
+      <ul>
+        <li class="last"><a href="AboutUs.aspx">About us</a><span>Know us</span></li>
+        <li><a href="Package.aspx">Packages</a><span>tour packages</span>
+          <ul>
+            <li><a href="Package.aspx">Summer Pack</a></li>
+            <li><a href="Package.aspx">Honey Moon special</a></li>
+            <li><a href="Package.aspx">Weekly Wonder</a></li>
+            <li><a href="Package.aspx">See more..........</a></li>
+          </ul>
+        
+        </li>
+        <li><a href="TouristSpots.aspx">Tourist Spots</a><span>Tourist Places</span>
+          <ul>
+            <li><a href="TouristSpots.aspx">Munnar</a></li>
+            <li><a href="TouristSpots.aspx">Hoganakkal</a></li>
+            <li><a href="TouristSpots.aspx">Fort Kochi</a></li>
+            <li><a href="TouristSpots.aspx">See more.........</a></li>
+          </ul>
+        </li>
+        <li><a href="Facilities.aspx">Facilities</a><span>Facilities we provide</span></li>
+        <li><a href="Gallery.aspx">Gallery</a><span>Our Memories</span></li>
+        <li class="active"><a href="Home.aspx">Home</a><span>home</span></li>
+      </ul>
+    </div>
+      <p>&nbsp;</p>
+    <div class="fl_left">
+      <h1><a href="Home.aspx">Bon Voyage</a></h1>
+      <p>Make every journey a memorable one....!</p>
+      
+    </div>
+  </div>
+</div>
+
+<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</div>
+
+
+<div class="wrapper">
+  <div id="footer" class="clear">
+    <div class="fl_left">
+      <div class="about_us border">
+        <h2>About Us</h2>
+        <p>We are a group of fun loving people who loves to travel alot. So we are quite alot about the needs of people who loves to go on a vecation. Be it a short trip or long, we provide the best in it's class facilities to our customers. Party bus, good food and amazing places always makes a trip mindblowing, we believe....!</p>
+      </div>
+      <div id="contact" class="clear">
+        <h2>Contact Us</h2>
+        <div class="fl_left">
+         <address>
+          <strong class="title">BonVoyage inc</strong><br />
+          Chengannur<br />
+          Town
+          
+          </address>
+          <ul>
+            <li><strong class="title">Tel:</strong><br />
+              9897654321</li>
+            <li><strong class="title">Fax:</strong><br />
+              0484 2550790 </li>
+            <li><strong class="title">Email:</strong><br />
+              <a href="#">bonVoyageInc@gmail.com</a></li>
+          </ul>
+          
+     
+           
+         <div id="backtotop"><a href="#top" class="topOfPage">To The Top</a></div>
+        </div>
+       
+      </div>
+      
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="fl_right">
+      
+       
+        <!-- ########### -->
+        <div id="tabs-3" class="tabcontainer">
+         <h2>Keep Up To Date</h2>
+          <ul class="socialize">
+            <li><span>Facebook:</span> <a href="#">www.facebook.com/myhandel</a></li>
+            <li><span>Twitter:</span> <a href="#">www.twitter.com/myhandel</a></li>
+            <li class="last"><span>LinkedIn:</span> <a href="#">www.linkedin.com/myhandel</a></li>
+          </ul>
+         
+        </div>
+      </div>
+     
+    </div>
+  
+ 
+</div>
+
+</body>
+</html>
